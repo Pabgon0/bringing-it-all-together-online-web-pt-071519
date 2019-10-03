@@ -25,6 +25,11 @@ class Dog
     SQL
     DB[:conn].execute(sql)
   end
+  
+  def save
+    if self.id
+    sql = <<-SQL
+  end
 
 
 
