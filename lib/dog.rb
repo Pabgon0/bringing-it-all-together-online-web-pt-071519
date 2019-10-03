@@ -3,11 +3,10 @@ require "pry"
 class Dog
   attr_accessor :id, :name, :breed, :hash
 
-  def initialize(hash)
-    binding.pry
+  def initialize(hash, id = nil)
     @id = id
-    @name = name
-    @breed = breed
+    @name = hash[0]
+    @breed = hash[1]
   end
 
 
