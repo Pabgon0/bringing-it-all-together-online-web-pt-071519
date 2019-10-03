@@ -1,12 +1,12 @@
 require "pry"
 
 class Dog
-  attr_accessor :id, :name, :breed, :hash
+  attr_accessor :id, :name, :breed
 
-  def initialize(hash)
-    @id = hash[0]
-    @name = hash[1]
-    @breed = hash[2]
+  def initialize(id: nil, name:, breed:)
+    @id = id
+    @name = name
+    @breed = breed
   end
 
 
